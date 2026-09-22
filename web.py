@@ -19,6 +19,7 @@ import http.server
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
+import os
  
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
