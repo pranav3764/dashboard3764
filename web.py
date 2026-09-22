@@ -20,8 +20,10 @@ import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
  
-DATA_FILE             = r"C:\Users\Victus\Downloads\Dashboard_1\live_data.json"
-STRADDLE_HISTORY_FILE = r"C:\Users\Victus\Downloads\Dashboard_1\straddle_history.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DATA_FILE             = os.path.join(BASE_DIR, "live_data.json")
+STRADDLE_HISTORY_FILE = os.path.join(BASE_DIR, "straddle_history.json")
 OTM_LEVELS = 7
 
 
